@@ -1,43 +1,63 @@
 :root{
-    --primary-color: #560980;
-    --text-color: #000000;
-    --border-color: #ad09ad;
+    --main-text-color: white;
 
 
 }
 .container{
     display: grid;
-    grid-template-columns:[first] 2fr [second] 3fr;
+    grid-template-columns:[first] 30% [second] 10% [third] 60%;
     grid-template-rows: [row1] 50% [row2] 50%;
-    padding: 10px;
-    height:300px;  
+    padding: 20px;
+    width: 50vw;
+    height: 50vh;  
 }
 #loginInfo {
+    font-size:1rem;
+    color: white;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 1 /-1;
-    background: linear-gradient(to bottom, #000000 , #8608c9);
+    background: linear-gradient(to bottom, rgb(70, 162, 255) , rgb(18, 121, 223));
     place-items:center;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
+    border-radius: 10% 0% 0% 10%;
 }
 #loginForm{
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: span 1;
     grid-row-start: row1;
     grid-row-end: span 2;
-    place-items:center;
+    place-items:start;
     display: flex;
+    border-radius: 0% 10% 10% 0%;
+    background: beige;
     flex-direction: column;
     justify-content: center;
 }
 label,input{
     display:block;
     margin-bottom:.5rem;
+    width: 250px;
 }
 .form-field{
     flex-direction:column;
     display:flex;
     margin-bottom:1rem;
+}
+button{
+    background-color:#4902bb;
+    color: white;
+    border-radius: 10% 10% 10% 10%;
+}
+button:hover{
+    background-color:#772fea;
+    color: white;
+}
+.password-recovery{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+
 }
