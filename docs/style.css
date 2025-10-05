@@ -1,0 +1,43 @@
+:root{
+    --primary-color: #560980;
+    --text-color: #000000;
+    --border-color: #ad09ad;
+
+
+}
+.container{
+    display: grid;
+    grid-template-columns:[first] 2fr [second] 3fr;
+    grid-template-rows: [row1] 50% [row2] 50%;
+    padding: 10px;
+    height:300px;  
+}
+#loginInfo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1 /-1;
+    background: linear-gradient(to bottom, #000000 , #8608c9);
+    place-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+#loginForm{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: row1;
+    grid-row-end: span 2;
+    place-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label,input{
+    display:block;
+    margin-bottom:.5rem;
+}
+.form-field{
+    flex-direction:column;
+    display:flex;
+    margin-bottom:1rem;
+}

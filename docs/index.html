@@ -2,47 +2,35 @@
     <html lang = "en">
         <head>
            <title>CSS Foundations</title> 
+           <link rel="stylesheet" href="style.css">
            <meta charset="UTF-8">
            <meta name= "viewport" content=" width = device-width, initial-scale = 1.0" >
-           <style>
-                h1{
-                    color:red;
-                    font-size: 2.5rem;
-                }
-                form-field{
-                    display:block;
-                }
-                #loginInfo{
-                    background-color: green;
-                }
-                #loginForm{
-                    background-color: yellow;
-                }
-           </style>
-           
         </head>
         <body>
-            <section id="loginInfo">
-                <h1> Super Ai Dash</h1>
-                <p>Ai powered finance from Apes, alt-coins, and fiat currenct, we promise you won't lose <strong><em>all</em></strong> of it</p>
-            </section>
-            <section id="loginForm">
-                <form action="#" method="post">
-                    <form-field>
-                        <label for="EMAIL">Enter Email:</label>
-                        <input type="email" name="email" id="EMAIL" placeholder="you@example.com" autofocus required>
-                    </form-field>
-                    <form-field>
-                        <label for="PASSWORD">Enter Password:</label>
-                        <input type="password" name="password" id="PASSWORD" placeholder="Enter your password" required>
-                    </form-field>
-                    <form-field>
-                        <button type="submit">Sign in</button>
-                    </form-field>
-                    <password-recover>
-                        <a href="#forgot_pass">Forgot Password</a>
-                    </password-recover>
-                </form>
-            </section>
+            <div class="container">
+                <section id="loginInfo">
+                    <h1> Super Ai Dash</h1>
+                    <p>Ai powered finance from Apes, alt-coins, and fiat currenct, we promise you won't lose <strong><em>all</em></strong> of it</p>
+                </section>
+                <section id="loginForm">
+                    <form action="#" method="post">
+                        <form-field>
+                            <label id="email-input" for="EMAIL">Enter Email:</label>
+                            <input type="email" name="email" id="EMAIL" placeholder="you@example.com" autofocus required>
+                        </form-field>
+                        <form-field>
+                            <label id="password-input" for="PASSWORD">Enter Password:</label>
+                            <input type="password" name="password" id="PASSWORD" placeholder="Enter your password" required>
+                        </form-field>
+                        <form-field>
+                            <button type="submit">Sign in</button>
+                        </form-field>
+                        <password-recover>
+                            <a href="#forgot_pass">Forgot Password</a>
+                        </password-recover>
+                    </form>
+                </section>
+            </div>
+
             
         </body>
