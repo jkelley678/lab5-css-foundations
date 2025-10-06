@@ -82,13 +82,18 @@ button{
     color: white;
     border-radius:5% 5% 5% 5%;
 }
+form-action{
+    display: flex;
+    justify-content: space-between;
+}
 button:hover{
     background-color:#772fea;
     border-color:#772fea;
     color: white;
 }
 password-recover a{
-
+    display:flex;
+    align-items:flex-end;
     font-size: 1.75vw;
     color: #286cbb;
     text-decoration:none;
