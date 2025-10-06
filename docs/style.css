@@ -1,18 +1,17 @@
-:root{
-    --main-text-color: white;
 
-
-}
 .container{
     display: grid;
-    grid-template-columns:[first] 30% [second] 10% [third] 60%;
+    padding:.5rem;
+    grid-template-columns:[first] 40%  [third] 60%;
     grid-template-rows: [row1] 50% [row2] 50%;
     padding: 20px;
-    width: 50vw;
-    height: 50vh;  
+    width:90vw;
+    aspect-ratio:16/9;
+    background-color: whitesmoke;
 }
 #loginInfo {
     font-size:1rem;
+    padding:.5rem;
     color: white;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -22,24 +21,50 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10% 0% 0% 10%;
+    border-radius: 3% 0% 0% 3%;
+}
+#loginInfo h1{
+    font-size: 4vw;
+    margin-bottom: 1rem;
+
+
+}
+#loginInfo p{
+    font-size:2vw;
+    margin-top:0;
 }
 #loginForm{
-    grid-column-start: 3;
+    grid-column-start: 2;
+    padding: 2rem;
     grid-column-end: span 1;
     grid-row-start: row1;
     grid-row-end: span 2;
     place-items:start;
     display: flex;
-    border-radius: 0% 10% 10% 0%;
-    background: beige;
+    border-radius: 0% 3% 3% 0%;
+    background: white;
     flex-direction: column;
     justify-content: center;
+
+}
+#loginForm input{
+    width: 45vw;
+    height:4vw;
+    aspect-ratio:15/1;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgb(216, 213, 213);
+
+}
+#loginForm label{
+    font-weight: bold;
+    color:rgb(96, 86, 86);
+    font-size:2.5vw;
+    margin-bottom: .3rem;
 }
 label,input{
     display:block;
-    margin-bottom:.5rem;
-    width: 250px;
+    margin-bottom:.5rem;    
 }
 .form-field{
     flex-direction:column;
@@ -47,17 +72,33 @@ label,input{
     margin-bottom:1rem;
 }
 button{
-    background-color:#4902bb;
+    width:8vw;
+    height:3vw;
+    border-style:solid;
+    border-color:#4A90E2;
+    font-size:1.55vw;
+    margin:0;
+    background-color:#4A90E2;
     color: white;
-    border-radius: 10% 10% 10% 10%;
+    border-radius:5% 5% 5% 5%;
 }
 button:hover{
     background-color:#772fea;
+    border-color:#772fea;
     color: white;
 }
-.password-recovery{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
+password-recover a{
 
+    font-size: 1.75vw;
+    color: #286cbb;
+    text-decoration:none;
+
+}
+password-recover a:hover{
+    color:#4A90E2;
+    text-decoration:underline;
+
+}
+::placeholder{
+    font-size: 1.5vw;
 }
