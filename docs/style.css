@@ -1,4 +1,8 @@
-
+:root{
+    --label-size: 1.6vw;
+    --label-color:rgb(96, 86, 86);
+    font-family: sans-serif;
+}
 .container{
     display: grid;
     padding:.5rem;
@@ -58,8 +62,8 @@
 }
 #loginForm label{
     font-weight: bold;
-    color:rgb(96, 86, 86);
-    font-size:2.5vw;
+    color:var(--label-color);
+    font-size:var(--label-size);
     margin-bottom: .3rem;
 }
 label,input{
@@ -75,10 +79,10 @@ button{
     width:8vw;
     height:3vw;
     border-style:solid;
-    border-color:#4A90E2;
+    border-color:#594ae2;
     font-size:1.55vw;
     margin:0;
-    background-color:#4A90E2;
+    background-color:#4937eb;
     color: white;
     border-radius:5% 5% 5% 5%;
 }
